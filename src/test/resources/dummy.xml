@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--<suite name="MyDemoSuite">
+  <test thread-count="5" name="TestLogin">
+    <classes>
+      <class name="TestNGPracticeTests.FirstTest">
+		<methods>
+			<include name="test2"></include>
+		</methods>
+	  </class>
+      
+    </classes>
+  </test> 
+  <test name="TestLogin2"><classes>
+	<class name="TestNGPracticeTests.SecondTest">
+		<methods>
+			<exclude name="test3"></exclude>
+		</methods>
+	</class>
+  </classes></test>
+  
+</suite> -->
+
+
+
+<suite name="MyDemoSuite2">
+	<parameter name="Username" value="Alexander"></parameter>
+	<parameter name="Password" value="@lexander#123"></parameter>
+  <test thread-count="5" name="TestngAnnotations1" enabled="false">
+	<parameter name="id" value="112233"></parameter>
+    
+    <classes>
+		
+		<class name="TestNGPracticeTests.TestngAnnotationsTest">
+			 </class>
+		
+			<class name = "TestNGPracticeTests.ParametrizedTests1">
+				
+			</class>
+			
+			<class name="TestNGPracticeTests.ParameterizedTests2">
+				
+			</class>
+		
+	 
+	</classes>
+      
+  </test>
+  
+  
+  	
+  <test thread-count="5" name="TestngAnnotations2">
+	<parameter name="id" value="556633"></parameter>
+    
+    <classes>
+		<class name="TestNGPracticeTests.TestngAnnotationsTest"> </class>
+		
+			<class name = "TestNGPracticeTests.ParametrizedTests1">
+				<parameter name="Country" value="Dubai"></parameter>
+			</class>
+			
+			<class name="TestNGPracticeTests.ParameterizedTests2">
+				<parameter name="Country" value="Australia"></parameter>
+			</class>
+		
+	 
+	</classes>
+      
+  </test>
+  
+  
+</suite> 
+  
+  
+

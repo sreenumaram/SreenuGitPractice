@@ -1,0 +1,17 @@
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="firstSuite">
+	<test name="groupTesting1">
+		<groups>
+			<run>
+				<include name="sanity" />
+				<exclude name="regression"/>
+			</run>
+		</groups>
+		<classes>
+			<class name ="TestNGPracticeTests.GroupTests1"/>
+				<class name ="TestNGPracticeTests.GroupTests2"/>
+		</classes>
+	</test>
+</suite>
